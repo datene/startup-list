@@ -1,0 +1,16 @@
+<div class="new_startup">
+  <h1>Add a new startup!</h1>
+
+  <%= simple_form_for :startup, url: startup_index_path do |f| %>
+    <%= f.input :company %>
+    <%= f.input :description %>
+    <%= f.input :website %>
+    <%= f.input :interested_students %>
+    <%= f.input :comments %>
+    <%= f.input :contacts %>
+    <%= f.input :technology_stack %>
+    <%= f.input :location %>
+    <%= f.input :links %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

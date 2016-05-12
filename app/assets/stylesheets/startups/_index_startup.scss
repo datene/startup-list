@@ -1,0 +1,39 @@
+.leader_info {
+  text-align: center;
+}
+
+.card_header {
+  color: $blue;
+}
+
+.card {
+  h3 {
+    margin: 0px;
+  }
+  background-color: $blue;
+  color: #fff;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 5pt;
+}
+
+.info {
+  margin: 20px;
+  p {
+    margin: 20px;
+  }
+}
+
+.students {
+  margin: 20px;
+  p {
+    margin: 20px;
+  }
+}
+
+.other_information {
+  margin: 20px;
+  p {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="leader_info">
+  <h1>Startup index</h1>
+  <p>Le Wagon's list of Amsterdam startups</p>
+</div>
+
+<div class="container">
+  <% @startups.reverse.each do |startup| %>
+  <h2 class="card_header"><%= startup.company %></h2>
+  <div class="card">
+    <div class="row">
+    <div class="col-lg-3 col-sm-6 col-xs-12 info">
+        <h3>General info:</h3>
+        <p>Company description: <%= startup.description %></p>
+        <p>Company website: <%= startup.website %></p>
+        <p>Company technology stack: <%= startup.technology_stack %></p>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-xs-12 students">
+        <h3>Student data:</h3>
+        <p>List of students interested: <%= startup.interested_students %></p>
+        <p>Comments: <%= startup.comments %></p>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-xs-12 other_information">
+        <h3>Other:</h3>
+        <p>Contacts and contact information: <%= startup.contacts %></p>
+        <p>Location: <%= startup.location %></p>
+        <p>Additional URL's: <%= startup.links %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
