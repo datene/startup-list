@@ -22,6 +22,12 @@
 /* Navbar logo */
 .navbar-wagon-brand img {
   width: 50px;
+  transform: none;
+  transition: transform 200ms ease;
+}
+
+.navbar-wagon-brand img:hover {
+  transform: rotate(180deg);
 }
 
 /* Navbar right section (with form, links, button) */
