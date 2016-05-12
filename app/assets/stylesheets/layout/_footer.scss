@@ -1,5 +1,9 @@
 // Your footer style
 .footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   padding: 50px;
   background-color: $blue;
   height: 200px;
